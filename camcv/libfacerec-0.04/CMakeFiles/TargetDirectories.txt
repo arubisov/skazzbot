@@ -1,0 +1,2 @@
+/home/pi/camcv/libfacerec-0.04/CMakeFiles/fisherfaces.dir
+/home/pi/camcv/libfacerec-0.04/CMakeFiles/opencv_facerec.dir

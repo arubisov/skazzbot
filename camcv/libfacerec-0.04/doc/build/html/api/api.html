@@ -1,0 +1,174 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>API &mdash; libfacerec 0.02 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.02',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="libfacerec 0.02 documentation" href="../index.html" />
+    <link rel="next" title="FaceRecognizer (Abstract Base Class)" href="class/class_facerecognizer.html" />
+    <link rel="prev" title="libfacerec documentation" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="class/class_facerecognizer.html" title="FaceRecognizer (Abstract Base Class)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="libfacerec documentation"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">libfacerec 0.02 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="api">
+<h1>API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
+<p>The basic API of libfacerec is very simple. Once a <a class="reference internal" href="class/class_facerecognizer.html#FaceRecognizer" title="class FaceRecognizer"><tt class="xref ocv ocv-class docutils literal"><span class="pre">FaceRecognizer</span></tt></a> is trained on a set of images and associated labels, it can be used to generate predictions for query images.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="class/class_facerecognizer.html">FaceRecognizer (Abstract Base Class)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class/class_facerecognizer.html#facerecognizer">FaceRecognizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_facerecognizer.html#facerecognizer-facerecognizer">FaceRecognizer::~FaceRecognizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_facerecognizer.html#facerecognizer-train">FaceRecognizer::train</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_facerecognizer.html#facerecognizer-predict">FaceRecognizer::predict</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_facerecognizer.html#facerecognizer-save">FaceRecognizer::save</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_facerecognizer.html#facerecognizer-load">FaceRecognizer::load</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="class/class_eigenfaces.html">Eigenfaces Method</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class/class_eigenfaces.html#eigenfaces">Eigenfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_eigenfaces.html#eigenfaces-eigenfaces">Eigenfaces::Eigenfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_eigenfaces.html#eigenfaces-save">Eigenfaces::save</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_eigenfaces.html#eigenfaces-load">Eigenfaces::load</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_eigenfaces.html#eigenfaces-train">Eigenfaces::train</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_eigenfaces.html#eigenfaces-predict">Eigenfaces::predict</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_eigenfaces.html#eigenfaces-eigenvalues">Eigenfaces::eigenvalues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_eigenfaces.html#eigenfaces-eigenvectors">Eigenfaces::eigenvectors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_eigenfaces.html#eigenfaces-mean">Eigenfaces::mean</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_eigenfaces.html#eigenfaces-num-components">Eigenfaces::num_components</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="class/class_fisherfaces.html">Fisherfaces Method</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class/class_fisherfaces.html#fisherfaces">Fisherfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_fisherfaces.html#fisherfaces-fisherfaces">Fisherfaces::Fisherfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_fisherfaces.html#fisherfaces-save">Fisherfaces::save</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_fisherfaces.html#fisherfaces-load">Fisherfaces::load</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_fisherfaces.html#fisherfaces-train">Fisherfaces::train</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_fisherfaces.html#fisherfaces-predict">Fisherfaces::predict</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_fisherfaces.html#fisherfaces-eigenvalues">Fisherfaces::eigenvalues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_fisherfaces.html#fisherfaces-eigenvectors">Fisherfaces::eigenvectors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_fisherfaces.html#fisherfaces-mean">Fisherfaces::mean</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_fisherfaces.html#fisherfaces-num-components">Fisherfaces::num_components</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="class/class_lbph.html">Local Binary Patterns Histograms (LBPH)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class/class_lbph.html#lbph">LBPH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_lbph.html#lbph-lbph">LBPH::LBPH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_lbph.html#lbph-save">LBPH::save</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_lbph.html#lbph-load">LBPH::load</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_lbph.html#lbph-train">LBPH::train</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_lbph.html#lbph-predict">LBPH::predict</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_lbph.html#lbph-neighbors">LBPH::neighbors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_lbph.html#lbph-radius">LBPH::radius</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_lbph.html#lbph-grid-x">LBPH::grid_x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_lbph.html#lbph-grid-y">LBPH::grid_y</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="class/class_colormap.html">ColorMaps in OpenCV</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class/class_colormap.html#imwrite">imwrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_colormap.html#imshow">imshow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_colormap.html#colormap-colormap">colormap::ColorMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_colormap.html#colormap-colormap-init">colormap::ColorMap::init</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_colormap.html#colormap-colormap-operator">colormap::ColorMap::operator()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class/class_colormap.html#colormap-colormap-linear-colormap">colormap::ColorMap::linear_colormap</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../index.html"
+                        title="previous chapter">libfacerec documentation</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="class/class_facerecognizer.html"
+                        title="next chapter">FaceRecognizer (Abstract Base Class)</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/api/api.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="class/class_facerecognizer.html" title="FaceRecognizer (Abstract Base Class)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="libfacerec documentation"
+             >previous</a> |</li>
+        <li><a href="../index.html">libfacerec 0.02 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Philipp Wagner.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

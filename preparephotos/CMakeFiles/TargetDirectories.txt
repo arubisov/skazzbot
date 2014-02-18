@@ -1,0 +1,1 @@
+/home/anton/preparephotos/CMakeFiles/prepare.dir
